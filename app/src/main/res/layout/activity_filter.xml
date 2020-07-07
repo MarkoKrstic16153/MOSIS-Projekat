@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.mfit.FilterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_filter"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intensity"
+            android:layout_marginRight="10dp"
+            />
+        <RadioGroup
+            android:id="@+id/hardness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="30dp"
+            >
+            <RadioButton
+                android:id="@+id/rb_easy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_easy"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="427dp" />
+
+            <RadioButton
+                android:id="@+id/rb_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_medium"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="478dp" />
+
+            <RadioButton
+                android:id="@+id/rb_hard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_hard"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="529dp" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            />
+        <RadioGroup
+            android:id="@+id/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cb_green"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="427dp" />
+
+            <RadioButton
+                android:id="@+id/rb_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cb_blue"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="478dp" />
+
+            <RadioButton
+                android:id="@+id/rb_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cb_red"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="529dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/show_mine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+
+        android:text="@string/show_mine"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/range"
+        android:inputType="number"
+        android:hint="Token Distance"
+        />
+    <Button
+        android:id="@+id/setFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_filters"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <Button
+        android:id="@+id/clearFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/clear_filters"
+        app:layout_constraintTop_toBottomOf="@+id/setFilters"
+        tools:layout_editor_absoluteX="0dp" />
+</LinearLayout>

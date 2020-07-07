@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">mFit</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">My Places</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="my_places">My Places</string>
+    <string name="new_place">New Place</string>
+    <string name="show_map">Show Map</string>
+    <string name="about">About</string>
+    <string name="info">\tmFit is fun and interactive app which will help you to get and stay in shape in easy manner. \n  Connect with your friends and start collecting your points by walking, running, cycling to locations on map given by other users \n  This will help you rank up and become a famouse mFit addict with profile followed by many friends and fans.</string>
+    <string name="ok">Ok</string>
+    <string name="place_name">Place Name: </string>
+    <string name="place_desc">Place Description: </string>
+    <string name="add_token">Add New Token</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="email">Email: </string>
+    <string name="password">Password: </string>
+
+    <string name="login">Login: </string>
+    <string name="no_account">Join mFit Community... </string>
+    <string name="confirm_password">Comfirm password </string>
+    <string name="date_birth">Date of birth </string>
+    <string name="first_name">First name: </string>
+    <string name="last_name">Last name: </string>
+    <string name="create_account">Create account </string>
+    <string name="log_out">Log out </string>
+    <string name="mFit">mFit</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="profile">Profile </string>
+    <string name="add_new_friend">Add New Friend </string>
+    <string name="filter">Filter </string>
+    <string name="set_filters">Set Filters </string>
+    <string name="clear_filters">Clear Filters </string>
+    <string name="cb_red">Red </string>
+    <string name="cb_green">Green </string>
+    <string name="cb_blue">Blue </string>
+    <string name="rb_easy">Easy </string>
+    <string name="rb_medium">Medium </string>
+    <string name="rb_hard">Hard </string>
+    <string name="title_filter">Customise your token filter </string>
+    <string name="latitude">Latitude </string>
+    <string name="longitude">Longitude </string>
+    <string name="intensity">Intensity </string>
+    <string name="color">Color </string>
+    <string name="title_add_token">Create a New Token </string>
+    <string name="send_location">Send My Location </string>
+    <string name="leader_table">mFit LeaderBoard </string>
+    <string name="token_color">Token Color</string>
+    <string name="token_intensity">Token Intensity</string>
+    <string name="distance">Distance</string>
+    <string name="placedBy">Placed by</string>
+    <string name="show_mine">Show my tokens</string>
+    <string name="nula">0</string>
+    <string name="points">Points</string>
+    <string name="requests">Friend requests:</string>
+    <string name="suggestions">Friend suggestions:</string>
+    <string name="friends">Your friends:</string>
+    <string name="loading">mFit is Loading. \n Please wait...</string>
+</resources>

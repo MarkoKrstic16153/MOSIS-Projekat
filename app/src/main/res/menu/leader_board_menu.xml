@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myplace.com.example.mfit.Map">
+    <item
+        android:id="@+id/add_friend"
+        android:orderInCategory="103"
+        android:title="@string/show_map"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/show_people"/>
+    <item
+        android:id="@+id/profile"
+        android:orderInCategory="103"
+        android:title="@string/profile"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/profile_ico"/>
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="103"
+        android:title="@string/about"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_about"/>
+</menu>

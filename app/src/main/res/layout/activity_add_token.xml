@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mfit.AddTokenActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_add_token"
+        android:textSize="25dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:layout_marginBottom="40dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/intensity"
+           android:layout_marginRight="10dp"
+           />
+    <RadioGroup
+        android:id="@+id/hardness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="30dp"
+        >
+        <RadioButton
+            android:id="@+id/rb_easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_easy"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="427dp" />
+
+        <RadioButton
+            android:id="@+id/rb_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_medium"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="478dp" />
+
+        <RadioButton
+            android:id="@+id/rb_hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_hard"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="529dp" />
+    </RadioGroup>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/color"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="20dp"
+           />
+    <RadioGroup
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rb_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_green"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="427dp" />
+
+        <RadioButton
+            android:id="@+id/rb_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_blue"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="478dp" />
+
+        <RadioButton
+            android:id="@+id/rb_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_red"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="529dp" />
+    </RadioGroup>
+   </LinearLayout>
+    <ImageView
+        android:id="@+id/tokenImage"
+        android:layout_width="180dp"
+        android:layout_height="125dp"
+        android:adjustViewBounds="true"
+
+        android:src="@drawable/token"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+       >
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="8dp"
+       android:layout_marginTop="50dp"
+        android:text="@string/add_token"
+        />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

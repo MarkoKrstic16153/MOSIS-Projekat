@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myplace">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/token"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/token"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.example.mfit.LocationService"
+            android:label=""
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name="com.example.mfit.CollectTokenActivity" />
+        <activity
+            android:name="com.example.mfit.ViewProfileActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name="com.example.mfit.LeaderBoardActivity" />
+        <activity android:name="com.example.mfit.FilterActivity" />
+        <activity android:name="com.example.mfit.AddFriend" />
+        <activity android:name="com.example.mfit.ProfileActivity" />
+        <activity android:name="com.example.mfit.SignInActivity" />
+        <activity android:name="com.example.mfit.Map" />
+        <activity
+            android:name="com.example.mfit.ViewToken"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name="com.example.mfit.AddTokenActivity" />
+        <activity
+            android:name="com.example.mfit.About"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="com.example.mfit.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
